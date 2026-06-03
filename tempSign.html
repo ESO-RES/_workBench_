@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Sign In</h1>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/help">Help</a>
+    </nav>
+
+    <form id="myForm" method="post" action="form-handler.php" autocomplete="on">
+      <fieldset>
+        <div id="signIn">
+          <div id="name">
+            <label for="aName">Enter name:</label>
+            <input id="aName" type="text" name="aName" maxlength="40" autocomplete="username" required>
+          </div>
+
+          <div id="password">
+            <label for="pw">Enter password:</label>
+            <input id="pw" name="pw" type="password" maxlength="128" autocomplete="current-password" required>
+          </div>
+
+          <div id="buttonGrpA">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="location.href='/help'">Help</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <p>...</p>
+  </main>
+
+  <footer>Footer</footer>
+</body>
+</html>
